@@ -2,7 +2,7 @@
  * @author Javier Mombiela Carne 20067
  * Implementacion de la hoja de Trabajo 02 Algoritmos
  * y Estructura de Datos - 2 de febrero 2021 - 
- * clase Stack.java tiene las funciones de un stack
+ * interface Stack.java tiene las funciones de un stack
  */
 
 public interface Stack<E> 

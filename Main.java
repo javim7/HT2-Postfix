@@ -76,7 +76,7 @@ public class Main {
                  
                  
              }  
-             catch (Exception e)  //separando los elementos que no son enteros
+             catch (Exception e)  //separando los elementos que no son numeros
              { 
 
                 //ya que hay una excecpcion, significa que tenemos un operador, por lo que tenemos que popear los dos numeros anteriores
