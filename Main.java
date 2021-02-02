@@ -3,11 +3,21 @@ import java.io.File;
 import java.util.Scanner;
 import java.io.FileNotFoundException;
 
-public class Calculadora {
+/**
+ * @author Javier Mombiela Carne 20067
+ * Implementacion de la hoja de Trabajo 02 Algoritmos
+ * y Estructura de Datos - 2 de febrero 2021 - 
+ * clase Main.java
+ */
+public class Main {
 
     
-    /** 
-     * @param args
+    /**
+     * 
+     * Metodo main  >>
+     * Ejecuta el programa llamando a la funcion Main()
+     * @param args Parametro utilizado por el metodo main del JDK
+     * 
      */
     public static void main(String[] args) {
 
@@ -35,9 +45,10 @@ public class Calculadora {
     }
 
     
-    /** 
-     * @param "
-     * @param i++
+    /**
+     * Metodo que se encarga de verificar si el elemento es un digito o no
+     * Hace las operaciones en base a que tipo de elementos son
+     * @param Postfix Operacion que se analiza del archivo .txt
      */
     public static void Calcu(String Postfix) { //creando el metodo Calcu para poder hacer las operaciones
 
