@@ -15,7 +15,7 @@ public class Calculadora implements CalculadoraInt {
      * @return valor el resultado de cualquier operacion calculada
      */
     @Override
-    public Double Calcular(int num1, int num2, String aString) {
+    public Double Calculo(int num1, int num2, String aString) {
 
         //creando variable nula 
         Double resultado = null;

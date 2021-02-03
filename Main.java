@@ -86,7 +86,7 @@ public class Main {
                 int num2 = pila.pop();
 
                 //obteniendo el resultado de los calculos al mandar los dos ints que se popearon y el postfix
-                int resultado = (int)Math.round(calcu.Calcular(num1, num2, aString));
+                int resultado = (int)Math.round(calcu.Calculo(num1, num2, aString));
                 pila.push(resultado); //se suma el resultado al stack para poder resolver el postfix
 
             }

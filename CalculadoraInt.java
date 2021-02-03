@@ -13,6 +13,6 @@ public interface CalculadoraInt {
      * @param aString
      * @return valor double
      */
-    public Double Calcular(int num1, int num2, String aString);
+    public Double Calculo(int num1, int num2, String aString);
     
 }
