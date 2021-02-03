@@ -6,9 +6,9 @@ import java.util.ArrayList;
  * @author Javier Mombiela Carne 20067
  * Implementacion de la hoja de Trabajo 02 Algoritmos
  * y Estructura de Datos - 2 de febrero 2021 - 
- * clase StackArrayList.java
+ * clase StackVector.java
  */
-public class StackArrayList<E>
+public class StackVector<E>
  implements Stack<E>
 {
 	protected ArrayList<E> data;
@@ -18,7 +18,7 @@ public class StackArrayList<E>
      * Metodo para crear un stack vacio
      * @param 
      */
-	public StackArrayList()
+	public StackVector()
 	{
 		data = new ArrayList<E>();
 	}
@@ -47,7 +47,7 @@ public class StackArrayList<E>
     /**
      * Metodo para ver el elemento de hasta arriba
      * @param 
-     * @return retorna el elemento de hasta arriba de la stack
+     * @return el elemento de hasta arriba de la stack
      */
     @Override
 	public E peek()
@@ -58,7 +58,7 @@ public class StackArrayList<E>
     /**
      * Metodo para ver el tamano del stack
      * @param 
-     * @return retorna un int con el numero de elementos en la stackk
+     * @return un int con el numero de elementos en el stack
      */
     @Override
 	public int size()
@@ -70,10 +70,11 @@ public class StackArrayList<E>
     /**
      * Metodo para ver si el stack esta vacio o no
      * @param 
-     * @return retorna true si esta vacia la stack
+     * @return se retorna true si stack esta vacia
      */
     @Override
 	public boolean empty()
+	
 	{
 		return size() == 0;
 	}

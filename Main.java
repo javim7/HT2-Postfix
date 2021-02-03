@@ -24,18 +24,19 @@ public class Main {
         //se utiliza un try catch para aseguranos que el archivo pueda ser leido correctamente 
         try{
 
+            //creando variables
             File archivoTexto = new File("datos.txt"); //creando nuestro nuevo archivo
 
             Scanner scan = new Scanner(archivoTexto); //instanciando la clase scanner con el archivo
 
-            String postfixobtenido = scan.nextLine(); //guardando el postfix como una variable
+            String postfixObtenido = scan.nextLine(); //guardando el postfix como una variable
 
-            System.out.println("\nPostfix obtenido: " + postfixobtenido + "\n"); //imprimiendo el postfix
+            System.out.println("\nPostfix obtenido: " + postfixObtenido + "\n"); //imprimiendo el postfix
 
             System.out.println("ENTRADA          OPERACION                                       PILA");
 
             //pasando el postfix al metodo Calcu 
-            Calcu(postfixobtenido);
+            Calcu(postfixObtenido);
 
         } catch (FileNotFoundException errorArchivoNoEncontrado) {
             // Se le advierte al usuario que el archivo no es existente, se termina el programa.
@@ -53,7 +54,7 @@ public class Main {
     public static void Calcu(String Postfix) { //creando el metodo Calcu para poder hacer las operaciones
 
         //creando la intancia de nuestra clase StackArraylist<E>
-        StackArrayList<Integer> pila = new StackArrayList<Integer>();
+        StackVector<Integer> pila = new StackVector<Integer>();
 
         //eliminando los espacios del postfix y guardandola como una nueva varaible
         String nuevoPostfix = Postfix.replace(" ", "");
