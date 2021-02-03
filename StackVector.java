@@ -9,7 +9,7 @@ import java.util.ArrayList;
  * clase StackVector.java
  */
 public class StackVector<E>
- implements Stack<E>
+ implements Stack<E>, CalculadoraInt
 {
 	protected ArrayList<E> data;
 
@@ -78,4 +78,10 @@ public class StackVector<E>
 	{
 		return size() == 0;
 	}
+
+    @Override
+    public Double Calcular(int num1, int num2, String aString) {
+        // TODO Auto-generated method stub
+        return null;
+    }
 }

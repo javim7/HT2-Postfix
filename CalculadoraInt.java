@@ -5,5 +5,14 @@
  * interface CalculadoraInt.java
  */
 public interface CalculadoraInt {
+
+    /**
+     * Metodo para poder hacer las operaciones aritmeticas
+     * @param num1
+     * @param num2
+     * @param aString
+     * @return valor double
+     */
+    public Double Calcular(int num1, int num2, String aString);
     
 }
