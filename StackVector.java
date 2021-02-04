@@ -80,7 +80,7 @@ public class StackVector<E>
 	}
 
     @Override
-    public Double Calculo(int num1, int num2, String aString) {
+    public String Calculo(String Postfix) {
         // TODO Auto-generated method stub
         return null;
     }

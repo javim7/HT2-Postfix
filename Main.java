@@ -21,6 +21,10 @@ public class Main {
      */
     public static void main(String[] args) {
 
+        //creando las instancias de clases
+        Calculadora calcu = new Calculadora();
+
+
         //se utiliza un try catch para aseguranos que el archivo pueda ser leido correctamente 
         try{
 
@@ -36,7 +40,7 @@ public class Main {
             System.out.println("ENTRADA          OPERACION                                       PILA");
 
             //pasando el postfix al metodo Calcu 
-            Control(postfixObtenido);
+            calcu.Calculo(postfixObtenido);
 
         } catch (FileNotFoundException errorArchivoNoEncontrado) {
             // Se le advierte al usuario que el archivo no es existente, se termina el programa.
@@ -51,7 +55,7 @@ public class Main {
      * Hace las operaciones en base a que tipo de elementos son
      * @param Postfix Operacion que se analiza del archivo .txt
      */
-    public static void Control(String Postfix) { //creando el metodo Calcu para poder hacer las operaciones
+   /* public static void Control(String Postfix) { //creando el metodo Calcu para poder hacer las operaciones
 
         //creando la intancia de nuestra clase StackArraylist<E>
         StackVector<Integer> pila = new StackVector<Integer>();
@@ -97,6 +101,6 @@ public class Main {
         System.out.println("\nResultado de (" + Postfix + ") es: " + pila.peek() + "\n");
 
 
-    }
+    }*/
     
 }

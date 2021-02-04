@@ -8,11 +8,9 @@ public interface CalculadoraInt {
 
     /**
      * Metodo para poder hacer las operaciones aritmeticas
-     * @param num1
-     * @param num2
-     * @param aString
-     * @return valor double
+     * @param Postfix
+     * @return valor String
      */
-    public Double Calculo(int num1, int num2, String aString);
+    public String Calculo(String Postfix);
     
 }
