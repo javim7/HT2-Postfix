@@ -1,5 +1,6 @@
-//importando clase de ArrayList
-import java.util.ArrayList;
+
+//importando clase de Vector
+import java.util.Vector;
 
 
 /**
@@ -11,7 +12,7 @@ import java.util.ArrayList;
 public class StackVector<E>
  implements Stack<E>, CalculadoraInt
 {
-	protected ArrayList<E> data;
+	protected Vector<E> data;
 
 
     /**
@@ -20,7 +21,7 @@ public class StackVector<E>
      */
 	public StackVector()
 	{
-		data = new ArrayList<E>();
+		data = new Vector<E>();
 	}
 
 

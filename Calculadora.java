@@ -92,13 +92,6 @@ public class Calculadora implements CalculadoraInt {
         //se hace un peek para poder obtener dicho resultado
         System.out.println("\nResultado de (" + Postfix + ") es: " + pila.peek() + "\n");
 
-        //creando variable nula 
-       // Double resultado = null;
-        //StackVector<Integer> pila = new StackVector<Integer>();
-
-        //if para ver que tipo de operador es el que tenemos
-        
-
         return resultado;
     }
     
