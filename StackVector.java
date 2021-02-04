@@ -12,6 +12,7 @@ import java.util.Vector;
 public class StackVector<E>
  implements Stack<E>
 {
+    //creando el vector
 	protected Vector<E> data;
 
 
