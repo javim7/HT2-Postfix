@@ -13,14 +13,14 @@ public class Calculadora implements CalculadoraInt {
      * @return resultado retorna el resultado como una string
      */
     @Override
-    public String Calculo(String Postfix) {
+    public String Calculo(String expresion) {
 
         //creando la intancia de nuestra clase StackArraylist<E>
         StackVector<Integer> pila = new StackVector<Integer>();
         String resultado = null;
 
         //eliminando los espacios del postfix y guardandola como una nueva varaible
-        String nuevoPostfix = Postfix.replace(" ", "");
+        String nuevoPostfix = expresion.replace(" ", "");
 
         //creando un for loop para poder iterar toda la string y verificar los elementos dentro de la misma
         for(int i = 0; i < nuevoPostfix.length(); i++) {
@@ -88,10 +88,17 @@ public class Calculadora implements CalculadoraInt {
             }
 
         }
+
+        //guardadno el peek como int asi tenemos el resultado final guardado
+        int peek = pila.peek();
+        //haciendo que el resultado se vuelva string y asi poder retornarlo
+        resultado = Integer.toString(peek);
+
         //se finalizan las operaciones pero el resultado esta hasta arriba de la pila
         //se hace un peek para poder obtener dicho resultado
-        System.out.println("\nResultado de (" + Postfix + ") es: " + pila.peek() + "\n");
+        System.out.println("\nResultado de (" + expresion + ") es: " + resultado + "\n");
 
+        //retornando el resultado
         return resultado;
     }
     

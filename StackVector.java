@@ -10,7 +10,7 @@ import java.util.Vector;
  * clase StackVector.java
  */
 public class StackVector<E>
- implements Stack<E>, CalculadoraInt
+ implements Stack<E>
 {
 	protected Vector<E> data;
 
@@ -78,11 +78,5 @@ public class StackVector<E>
 	
 	{
 		return size() == 0;
-	}
-
-    @Override
-    public String Calculo(String Postfix) {
-        // TODO Auto-generated method stub
-        return null;
     }
 }

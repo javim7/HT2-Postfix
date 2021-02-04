@@ -11,6 +11,6 @@ public interface CalculadoraInt {
      * @param Postfix
      * @return valor String
      */
-    public String Calculo(String Postfix);
+    public String Calculo(String expresion);
     
 }
