@@ -17,7 +17,7 @@ public class Calculadora implements CalculadoraInt {
 
         //creando la intancia de nuestra clase StackArraylist<E>
         StackVector<Integer> pila = new StackVector<Integer>();
-        String resultado = null;
+        String resultado = "";
 
         //eliminando los espacios del postfix y guardandola como una nueva varaible
         String nuevoPostfix = expresion.replace(" ", "");
