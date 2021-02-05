@@ -33,14 +33,18 @@ public class Main {
 
             Scanner scan = new Scanner(archivoTexto); //instanciando la clase scanner con el archivo
 
-            String postfixObtenido = scan.nextLine(); //guardando el postfix como una variable
+            while(scan.hasNextLine()) { //while para que se lean todas las lineas en el archivo
+                
+            
+                String postfixObtenido = scan.nextLine(); //guardando el postfix como una variable
 
-            System.out.println("\nPostfix obtenido: " + postfixObtenido + "\n"); //imprimiendo el postfix
+                System.out.println("\nPostfix obtenido: " + postfixObtenido + "\n"); //imprimiendo el postfix
 
-            System.out.println("ENTRADA          OPERACION                                       PILA");
+                System.out.println("ENTRADA          OPERACION                                       PILA");
 
-            //pasando el postfix al metodo Calcu 
-            calcu.Calculo(postfixObtenido);
+                //pasando el postfix al metodo Calcu 
+                calcu.Calculo(postfixObtenido);
+          }
 
         } catch (FileNotFoundException errorArchivoNoEncontrado) {
             // Se le advierte al usuario que el archivo no es existente, se termina el programa.
